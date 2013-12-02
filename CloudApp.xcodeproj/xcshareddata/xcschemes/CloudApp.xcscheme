@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "275A427F1667877300E9AA3A"
-               BuildableName = "obcl.CloudApp.app"
+               BuildableName = "obcl.appserialtest02.app"
                BlueprintName = "CloudApp"
                ReferencedContainer = "container:CloudApp.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "275A427F1667877300E9AA3A"
-            BuildableName = "obcl.CloudApp.app"
+            BuildableName = "obcl.appserialtest02.app"
             BlueprintName = "CloudApp"
             ReferencedContainer = "container:CloudApp.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "275A427F1667877300E9AA3A"
-            BuildableName = "obcl.CloudApp.app"
+            BuildableName = "obcl.appserialtest02.app"
             BlueprintName = "CloudApp"
             ReferencedContainer = "container:CloudApp.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "275A427F1667877300E9AA3A"
-            BuildableName = "obcl.CloudApp.app"
+            BuildableName = "obcl.appserialtest02.app"
             BlueprintName = "CloudApp"
             ReferencedContainer = "container:CloudApp.xcodeproj">
          </BuildableReference>
