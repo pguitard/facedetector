@@ -13,4 +13,7 @@
 #import <OCFoundation/OCFCloudApp.h>
 
 @interface CloudApp : OCFCloudApp
+
++ (NSArray *)imageProcessing:(NSData *)data;
+
 @end
