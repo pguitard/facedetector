@@ -22,7 +22,7 @@
         [result appendString:@"     <form role=\"form\" method=\"post\" enctype=\"multipart/form-data\">"];
         [result appendString:@"         <div class=\"form-group\">"];
         [result appendString:@"             <label for=\"imgfile\">File input</label>"];
-        [result appendString:@"             <input type=\"file\" name=\"imgfile\"><p class=\"help-block\">Please select a PNG file.</p>"];
+        [result appendString:@"             <input type=\"file\" name=\"imgfile\"><p class=\"help-block\">Please select a picture showing people.</p>"];
         [result appendString:@"             <button type=\"submit\" class=\"btn btn-primary\" name=\"submit\">Upload</button"];
         [result appendString:@"         </div>"];
         [result appendString:@"     </form>"];
@@ -89,8 +89,8 @@
     [result appendString:@"     <br>"];
 
     [result appendString:@"     <div class=\"row\">"];
-    [result appendString:@"         <div class=\"col-xs-4\"></div>"];
-    [result appendString:@"         <div class=\"col-xs-4\">"];
+    [result appendString:@"         <div class=\"col-md-4 col-xs-2\"></div>"];
+    [result appendString:@"         <div class=\"col-md-4 col-xs-8\">"];
     
     [result appendString:@"             <div class=\"panel panel-primary\">"];
     [result appendString:@"                 <div class=\"panel-heading\">"];
@@ -103,7 +103,7 @@
     [result appendString:@"                 </div>"];
     [result appendString:@"             </div>"];
     [result appendString:@"         </div>"];
-    [result appendString:@"         <div class=\"col-xs-4\"></div>"];
+    [result appendString:@"         <div class=\"col-md-4 col-xs-2\"></div>"];
     [result appendString:@"     </div>"];
     [result appendString:@" </body>"];
     
