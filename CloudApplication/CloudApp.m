@@ -39,7 +39,7 @@
             NSMutableString *result = [NSMutableString new];
 
             [result appendString:@"<div class=\"alert alert-danger\">No picture to process!</div>"];
-            [result appendString:@"<div class=\"row\"><div class=\"col-md-9\"></div><form method=\"get\"><div class=\"col-md-3\"><input type=\"submit\" class=\"btn btn-primary\" value=\"Try again\"></button></div></form></div>"];
+            [result appendString:@"<div class=\"row\"><div class=\"col-xs-9\"></div><form method=\"get\"><div class=\"col-xs-3\"><input type=\"submit\" class=\"btn btn-primary\" value=\"Try again\"></button></div></form></div>"];
             
             [request respondWith:[self generateResponse:result]];
         } else {
@@ -59,11 +59,11 @@
                 CIImage *croppedImage = [image imageByCroppingToRect:[f bounds]];
                 NSBitmapImageRep *imageRep = [[NSBitmapImageRep alloc] initWithCIImage:croppedImage];
                 NSData *croppedImageData = [imageRep representationUsingType:NSPNGFileType properties:nil];
-                NSString *htmlImage = [NSString stringWithFormat:@"<div class=\"row\"><div class=\"col-md-1\"><h2>#%ld</h2></div><div class=\"col-md-11\"><img class=\"thumbnail\" width=\"100\" height=\"100\" src=\"data:image/png;base64,%@\"/></div></div>", (long)index, [croppedImageData base64EncodedString]];
+                NSString *htmlImage = [NSString stringWithFormat:@"<div class=\"row\"><div class=\"col-xs-1\"><h2>#%ld</h2></div><div class=\"col-xs-11\"><img class=\"thumbnail\" width=\"100\" height=\"100\" src=\"data:image/png;base64,%@\"/></div></div>", (long)index, [croppedImageData base64EncodedString]];
                 [result appendString:htmlImage];
             }
             
-            [result appendString:@"<div class=\"row\"><div class=\"col-md-9\"></div><form method=\"get\"><div class=\"col-md-3\"><input type=\"submit\" class=\"btn btn-primary\" value=\"Home\"></button></div></form></div>"];
+            [result appendString:@"<div class=\"row\"><div class=\"col-xs-9\"></div><form method=\"get\"><div class=\"col-xs-3\"><input type=\"submit\" class=\"btn btn-primary\" value=\"Home\"></button></div></form></div>"];
 
             [request respondWith:[self generateResponse:result]];
         }
@@ -89,8 +89,8 @@
     [result appendString:@"     <br>"];
 
     [result appendString:@"     <div class=\"row\">"];
-    [result appendString:@"         <div class=\"col-md-4\"></div>"];
-    [result appendString:@"         <div class=\"col-md-4\">"];
+    [result appendString:@"         <div class=\"col-xs-4\"></div>"];
+    [result appendString:@"         <div class=\"col-xs-4\">"];
     
     [result appendString:@"             <div class=\"panel panel-primary\">"];
     [result appendString:@"                 <div class=\"panel-heading\">"];
@@ -103,7 +103,7 @@
     [result appendString:@"                 </div>"];
     [result appendString:@"             </div>"];
     [result appendString:@"         </div>"];
-    [result appendString:@"         <div class=\"col-md-4\"></div>"];
+    [result appendString:@"         <div class=\"col-xs-4\"></div>"];
     [result appendString:@"     </div>"];
     [result appendString:@" </body>"];
     
