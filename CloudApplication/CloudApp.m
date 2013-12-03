@@ -89,8 +89,8 @@
     [result appendString:@"     <br>"];
 
     [result appendString:@"     <div class=\"row\">"];
-    [result appendString:@"         <div class=\"col-md-4 col-xs-2\"></div>"];
-    [result appendString:@"         <div class=\"col-md-4 col-xs-8\">"];
+    [result appendString:@"         <div class=\"col-md-4 col-xs-1\"></div>"];
+    [result appendString:@"         <div class=\"col-md-4 col-xs-10\">"];
     
     [result appendString:@"             <div class=\"panel panel-primary\">"];
     [result appendString:@"                 <div class=\"panel-heading\">"];
@@ -103,7 +103,7 @@
     [result appendString:@"                 </div>"];
     [result appendString:@"             </div>"];
     [result appendString:@"         </div>"];
-    [result appendString:@"         <div class=\"col-md-4 col-xs-2\"></div>"];
+    [result appendString:@"         <div class=\"col-md-4 col-xs-1\"></div>"];
     [result appendString:@"     </div>"];
     [result appendString:@" </body>"];
     
