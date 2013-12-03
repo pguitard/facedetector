@@ -14,6 +14,6 @@
 
 @interface CloudApp : OCFCloudApp
 
-+ (NSArray *)imageProcessing:(NSData *)data;
++ (NSArray *)imageProcessing:(CIImage *)image;
 
 @end

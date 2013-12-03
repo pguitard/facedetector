@@ -12,6 +12,7 @@
 		27905FDB177349DC00BA24C7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27905FDA177349DC00BA24C7 /* MainMenu.xib */; };
 		27B97E5217733234001D81DB /* CloudApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B97E5117733234001D81DB /* CloudApp.m */; };
 		37C8F9F8184D1D67006A1117 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C8F9F7184D1D67006A1117 /* QuartzCore.framework */; };
+		37C8F9FB184E100F006A1117 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C8F9FA184E100F006A1117 /* NSData+Base64.m */; };
 		AB37F59116808DB5005E8D79 /* AppIcon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = AB37F59016808DB5005E8D79 /* AppIcon.iconset */; };
 		AB8DE9331822A32600D2B849 /* OCFWebServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDC88D217F1CC8100C5D66B /* OCFWebServer.framework */; };
 		AB8DE9341822A32600D2B849 /* OCFWeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDC88D117F1CC8100C5D66B /* OCFWeb.framework */; };
@@ -34,6 +35,8 @@
 		27BE2F761831491400E9DC09 /* ServiceCloudInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceCloudInterface.h; sourceTree = "<group>"; };
 		37C8F9F5184D1B6C006A1117 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		37C8F9F7184D1D67006A1117 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		37C8F9F9184E100F006A1117 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		37C8F9FA184E100F006A1117 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		AB37F573168085F4005E8D79 /* CloudApplication-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudApplication-Info.plist"; sourceTree = "<group>"; };
 		AB37F575168085F4005E8D79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB37F577168085F4005E8D79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -113,6 +116,8 @@
 		AB37F571168085F4005E8D79 /* CloudApplication */ = {
 			isa = PBXGroup;
 			children = (
+				37C8F9F9184E100F006A1117 /* NSData+Base64.h */,
+				37C8F9FA184E100F006A1117 /* NSData+Base64.m */,
 				27B97E5017733234001D81DB /* CloudApp.h */,
 				27B97E5117733234001D81DB /* CloudApp.m */,
 				27BE2F761831491400E9DC09 /* ServiceCloudInterface.h */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABDC88D817F1CE1100C5D66B /* Service.m in Sources */,
+				37C8F9FB184E100F006A1117 /* NSData+Base64.m in Sources */,
 				ABDCE8D616808F270050F06E /* main.m in Sources */,
 				27B97E5217733234001D81DB /* CloudApp.m in Sources */,
 			);
