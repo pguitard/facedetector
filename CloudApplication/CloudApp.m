@@ -23,7 +23,7 @@
         [result appendString:@"         <div class=\"form-group\">"];
         [result appendString:@"             <label for=\"imgfile\">File input</label>"];
         [result appendString:@"             <input type=\"file\" name=\"imgfile\"><p class=\"help-block\">Please select a picture showing people.</p>"];
-        [result appendString:@"             <button type=\"submit\" class=\"btn btn-primary\" name=\"submit\">Upload</button"];
+        [result appendString:@"             <div class=\"pull-right\"><button type=\"submit\" class=\"btn btn-primary\" name=\"submit\">Upload</button></div>"];
         [result appendString:@"         </div>"];
         [result appendString:@"     </form>"];
         
@@ -54,15 +54,19 @@
 
             NSInteger index = 0;
             
+            [result appendString:@"<div class=\"row\">"];
+                                   
             for (CIFaceFeature *f in facesFeatures) {
                 index++;
                 CIImage *croppedImage = [image imageByCroppingToRect:[f bounds]];
                 NSBitmapImageRep *imageRep = [[NSBitmapImageRep alloc] initWithCIImage:croppedImage];
                 NSData *croppedImageData = [imageRep representationUsingType:NSPNGFileType properties:nil];
-                NSString *htmlImage = [NSString stringWithFormat:@"<div class=\"row\"><div class=\"col-xs-2\"><h2>#%ld</h2></div><div class=\"col-xs-10\"><img class=\"thumbnail\" width=\"100\" height=\"100\" src=\"data:image/png;base64,%@\"/></div></div>", (long)index, [croppedImageData base64EncodedString]];
+                NSString *htmlImage = [NSString stringWithFormat:@"<div class=\"col-xs-%lu\"><img class=\"thumbnail\" width=\"100\" height=\"100\" src=\"data:image/png;base64,%@\"/></div>", 12 / [facesFeatures count], [croppedImageData base64EncodedString]];
                 [result appendString:htmlImage];
             }
             
+            [result appendString:@"</div>"];
+
             [result appendString:@"<div class=\"row\"><div class=\"col-xs-12\"><form method=\"get\"><div class=\"pull-right\"><input type=\"submit\" class=\"btn btn-primary\" value=\"Home\"></input></form></div></div></div>"];
 
             [request respondWith:[self generateResponse:result]];
@@ -89,8 +93,8 @@
     [result appendString:@"     <br>"];
 
     [result appendString:@"     <div class=\"row\">"];
-    [result appendString:@"         <div class=\"col-md-4 col-xs-1\"></div>"];
-    [result appendString:@"         <div class=\"col-md-4 col-xs-10\">"];
+    [result appendString:@"         <div class=\"col-xs-1\"></div>"];
+    [result appendString:@"         <div class=\"col-xs-10\">"];
     
     [result appendString:@"             <div class=\"panel panel-primary\">"];
     [result appendString:@"                 <div class=\"panel-heading\">"];
@@ -103,7 +107,7 @@
     [result appendString:@"                 </div>"];
     [result appendString:@"             </div>"];
     [result appendString:@"         </div>"];
-    [result appendString:@"         <div class=\"col-md-4 col-xs-1\"></div>"];
+    [result appendString:@"         <div class=\"col-xs-1\"></div>"];
     [result appendString:@"     </div>"];
     [result appendString:@" </body>"];
     
