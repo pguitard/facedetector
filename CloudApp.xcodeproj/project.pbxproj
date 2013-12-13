@@ -116,13 +116,13 @@
 		AB37F571168085F4005E8D79 /* CloudApplication */ = {
 			isa = PBXGroup;
 			children = (
-				37C8F9F9184E100F006A1117 /* NSData+Base64.h */,
-				37C8F9FA184E100F006A1117 /* NSData+Base64.m */,
 				27B97E5017733234001D81DB /* CloudApp.h */,
 				27B97E5117733234001D81DB /* CloudApp.m */,
 				27BE2F761831491400E9DC09 /* ServiceCloudInterface.h */,
 				ABDC88D617F1CE1100C5D66B /* Service.h */,
 				ABDC88D717F1CE1100C5D66B /* Service.m */,
+				37C8F9F9184E100F006A1117 /* NSData+Base64.h */,
+				37C8F9FA184E100F006A1117 /* NSData+Base64.m */,
 				AB37F572168085F4005E8D79 /* Supporting Files */,
 			);
 			path = CloudApplication;
